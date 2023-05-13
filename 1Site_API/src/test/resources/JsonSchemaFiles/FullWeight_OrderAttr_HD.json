@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "serviceType": {
+      "type": "string"
+    },
+    "suburbOfSPOnlyLocalisation": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "totalQty": {
+      "type": "integer"
+    },
+    "orderAttributes": {
+      "type": "object",
+      "properties": {
+        "serviceType": {
+          "type": "string"
+        },
+        "slotMaxItems": {
+          "type": "integer"
+        },
+        "orderDeliveryInstruction": {
+          "type": "string"
+        },
+        "deliveryWindowStartTimeUTC": {
+          "type": "string"
+        },
+        "slotShipCharge": {
+          "type": "number"
+        },
+        "orderbaggingpreference": {
+          "type": "integer"
+        },
+        "reservationExpirationTimeLocal": {
+          "type": "string"
+        },
+        "deliverySlotUnattendedType": {
+          "type": "string"
+        },
+        "deliveryWindowId": {
+          "type": "string"
+        },
+        "deliverySlotShift": {
+          "type": "string"
+        },
+        "shiftId": {
+          "type": "string"
+        },
+        "orderSubServiceType": {
+          "type": "string"
+        },
+        "orderTotalGapToGetFreeShipCharge": {
+          "type": "number"
+        },
+        "slotcutofftimeLocal": {
+          "type": "string"
+        },
+        "timeZone": {
+          "type": "string"
+        },
+        "reservationExpirationTimeUTC": {
+          "type": "string"
+        },
+        "deliveryWindowEndTime": {
+          "type": "string"
+        },
+        "orderBagCountForBagless": {
+          "type": "string"
+        },
+        "isColesPlusMember": {
+          "type": "boolean"
+        },
+        "deliveryWindowStartTime": {
+          "type": "string"
+        },
+        "orderSubServiceTypeDesc": {
+          "type": "string"
+        },
+        "shipChargeSaving": {
+          "type": "integer"
+        },
+        "deliverySlotPaymentOptions": {
+          "type": "string"
+        },
+        "zoneLocationId": {
+          "type": "string"
+        },
+        "ageGateViewed": {
+          "type": "boolean"
+        },
+        "slotcutofftimeUTC": {
+          "type": "string"
+        },
+        "deliveryWindowEndTimeUTC": {
+          "type": "string"
+        },
+        "deliverySlotBaggingOption": {
+          "type": "integer"
+        },
+        "deliverySlotRestrictions": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "slotMOVForFreeShipCharge": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "serviceType",
+        "slotMaxItems",
+        "orderDeliveryInstruction",
+        "deliveryWindowStartTimeUTC",
+        "slotShipCharge",
+        "orderbaggingpreference",
+        "reservationExpirationTimeLocal",
+        "deliverySlotUnattendedType",
+        "deliveryWindowId",
+        "deliverySlotShift",
+        "shiftId",
+        "orderSubServiceType",
+        "orderTotalGapToGetFreeShipCharge",
+        "slotcutofftimeLocal",
+        "timeZone",
+        "reservationExpirationTimeUTC",
+        "deliveryWindowEndTime",
+        "orderBagCountForBagless",
+        "isColesPlusMember",
+        "deliveryWindowStartTime",
+        "orderSubServiceTypeDesc",
+        "shipChargeSaving",
+        "deliverySlotPaymentOptions",
+        "zoneLocationId",
+        "ageGateViewed",
+        "slotcutofftimeUTC",
+        "deliveryWindowEndTimeUTC",
+        "deliverySlotBaggingOption",
+        "deliverySlotRestrictions",
+        "slotMOVForFreeShipCharge"
+      ]
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "postcodeOfSPOnlyLocalisation": {
+      "type": "string"
+    },
+    "overallMOV": {
+      "type": "integer"
+    },
+    "orderItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "unitPrice": {
+              "type": "number"
+            },
+            "itemTotal": {
+              "type": "number"
+            },
+            "itemSaving": {
+              "type": "integer"
+            },
+            "orderItemId": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "partNumber": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "orderSaving": {
+      "type": "integer"
+    },
+    "orderSubTotal": {
+      "type": "number"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "orderShipping": {
+      "type": "number"
+    },
+    "baggingItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "unitPrice": {
+              "type": "number"
+            },
+            "totalSaving": {
+              "type": "integer"
+            },
+            "bagSKU": {
+              "type": "string"
+            },
+            "totalPrice": {
+              "type": "number"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "bagType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "unitPrice",
+            "totalSaving",
+            "bagSKU",
+            "totalPrice",
+            "qty",
+            "bagType"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "serviceType",
+    "suburbOfSPOnlyLocalisation",
+    "orderId",
+    "totalQty",
+    "orderAttributes",
+    "storeId",
+    "postcodeOfSPOnlyLocalisation",
+    "overallMOV",
+    "orderItems",
+    "colWebstoreId",
+    "orderSaving",
+    "orderSubTotal",
+    "catalogId",
+    "orderShipping",
+    "baggingItems"
+  ],
+  "additionalProperties": false
+}

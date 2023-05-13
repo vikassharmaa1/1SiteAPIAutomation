@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "hasValidAddress": {
+      "type": "boolean"
+    },
+    "orderItemsInSync": {
+      "type": "boolean"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "hasValidPhone": {
+      "type": "boolean"
+    },
+    "dwServiceType": {
+      "type": "string"
+    },
+    "orderSaving": {
+      "type": "number"
+    },
+    "maxItemsLimitMet": {
+      "type": "boolean"
+    },
+    "orderSubTotal": {
+      "type": "number"
+    },
+    "orderItemsValid": {
+      "type": "boolean"
+    },
+    "orderShipping": {
+      "type": "number"
+    },
+    "actionRequired": {
+      "type": "boolean"
+    },
+    "dwSlotValid": {
+      "type": "boolean"
+    },
+    "minimumOrderValueMet": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "hasValidAddress",
+    "orderItemsInSync",
+    "orderId",
+    "hasValidPhone",
+    "dwServiceType",
+    "orderSaving",
+    "maxItemsLimitMet",
+    "orderSubTotal",
+    "orderItemsValid",
+    "orderShipping",
+    "actionRequired",
+    "dwSlotValid",
+    "minimumOrderValueMet"
+  ]
+}

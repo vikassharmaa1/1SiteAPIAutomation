@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "serviceType": {
+      "type": "string"
+    },
+    "orderModificationCount": {
+      "type": "integer"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "orderSubServiceType": {
+      "type": "string"
+    },
+    "slotcutofftimeLocal": {
+      "type": "string"
+    },
+    "timeZone": {
+      "type": "string"
+    },
+    "reservationExpirationTimeUTC": {
+      "type": "string"
+    },
+    "ccLocationId": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "orderSubServiceTypeDesc": {
+      "type": "string"
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "reservationExpirationTimeLocal": {
+      "type": "string"
+    },
+    "slotcutofftimeUTC": {
+      "type": "string"
+    },
+    "deliveryWindowId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "serviceType",
+    "orderModificationCount",
+    "orderId",
+    "orderSubServiceType",
+    "slotcutofftimeLocal",
+    "timeZone",
+    "reservationExpirationTimeUTC",
+    "ccLocationId",
+    "storeId",
+    "orderSubServiceTypeDesc",
+    "colWebstoreId",
+    "catalogId",
+    "reservationExpirationTimeLocal",
+    "slotcutofftimeUTC",
+    "deliveryWindowId"
+  ]
+}

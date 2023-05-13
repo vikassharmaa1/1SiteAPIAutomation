@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.rest.utilities.Reporting" />
+		<!-- <listener class-name="com.rest.utilities.AnnotationTransformer" /> -->
+	</listeners>
+	<parameter name="env" value="SIT" />
+	<parameter name="layer" value="PS" />
+
+	<test name="PS ADD UPDATE TROLLEY TEST">
+		<parameter name="sheetname" value="PS_AddUpdateTrolley"></parameter>
+		<classes>
+			<class name="ps.trolley.api.tests.PS_AddUpdateTrolley">
+				<methods>
+				    <include name="validateAddRemoveItems" />
+					<include name="validateAdditionalDataRequiredFlase" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

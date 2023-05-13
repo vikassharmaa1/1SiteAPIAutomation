@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "serviceType": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "locationId": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "suburb": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "serviceType",
+    "country",
+    "catalogId",
+    "orderId",
+    "locationId",
+    "latitude",
+    "postcode",
+    "suburb",
+    "state",
+    "storeId",
+    "colWebstoreId",
+    "longitude"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/EmtyTrolleyRD",
+    "definitions": {
+        "EmtyTrolleyRD": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "serviceType": {
+                    "type": "string"
+                },
+                "orderModificationCount": {
+                    "type": "null"
+                },
+                "orderAddress": {
+                    "$ref": "#/definitions/OrderAddress"
+                },
+                "orderModifiedFlag": {
+                    "type": "boolean"
+                },
+                "orderId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "totalQty": {
+                    "type": "integer"
+                },
+                "ccpAddressId": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "orderAttributes": {
+                    "$ref": "#/definitions/OrderAttributes"
+                },
+                "storeId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "overallMOV": {
+                    "type": "integer"
+                },
+                "orderItems": {
+                    "type": "array",
+                    "items": {}
+                },
+                "colWebstoreId": {
+                    "type": "string"
+                },
+                "orderSaving": {
+                    "type": "integer"
+                },
+                "orderSubTotal": {
+                    "type": "integer"
+                },
+                "catalogId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "orderShipping": {
+                    "type": "integer"
+                },
+                "baggingItems": {
+                    "type": "array",
+                    "items": {}
+                },
+                "orderDiscount": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "baggingItems",
+                "catalogId",
+                "ccpAddressId",
+                "colWebstoreId",
+                "orderAddress",
+                "orderAttributes",
+                "orderDiscount",
+                "orderId",
+                "orderItems",
+                "orderModificationCount",
+                "orderModifiedFlag",
+                "orderSaving",
+                "orderShipping",
+                "orderSubTotal",
+                "overallMOV",
+                "serviceType",
+                "storeId",
+                "totalQty"
+            ],
+            "title": "EmtyTrolleyRD"
+        },
+        "OrderAddress": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "orderRemoteDeliveryPartnerDetails": {
+                    "$ref": "#/definitions/OrderRemoteDeliveryPartnerDetails"
+                }
+            },
+            "required": [
+                "orderRemoteDeliveryPartnerDetails"
+            ],
+            "title": "OrderAddress"
+        },
+        "OrderRemoteDeliveryPartnerDetails": {
+            "type": "object",
+            "additionalProperties": false,
+            "title": "OrderRemoteDeliveryPartnerDetails"
+        },
+        "OrderAttributes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "substitutionOptionsAvailable": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "substitutionOptionsAvailable"
+            ],
+            "title": "OrderAttributes"
+        }
+    }
+}

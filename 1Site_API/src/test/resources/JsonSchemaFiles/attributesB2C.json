@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "isB2B": {
+      "type": "boolean"
+    },
+    "parentMemberDN": {
+      "type": "string"
+    },
+    "edmTotalSpent": {
+      "type": "number"
+    },
+    "edmFirstOrderDate": {
+      "type": "string"
+    },
+    "edmDeliveryCustomer": {
+      "type": "string"
+    },
+    "colUserId": {
+      "type": "string"
+    },
+    "csrRedemptionLimitExemption": {
+      "type": "integer"
+    },
+    "edmClickAndCollectCustomer": {
+      "type": "string"
+    },
+    "edmOrderCount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "isB2B",
+    "parentMemberDN",
+    "edmTotalSpent",
+    "edmFirstOrderDate",
+    "edmDeliveryCustomer",
+    "colUserId",
+    "csrRedemptionLimitExemption",
+    "edmClickAndCollectCustomer",
+    "edmOrderCount"
+  ]
+}

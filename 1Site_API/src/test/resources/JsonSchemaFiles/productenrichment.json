@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalCount": {
+      "type": "integer"
+    },
+    "partNumbers": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "partNumber": {
+              "type": "string"
+            },
+            "pricesOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "listPrice": {
+                  "type": "number"
+                },
+                "offerPrice": {
+                  "type": "number"
+                }
+              }
+            },
+            "redemptionsOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "redemptionLimitOfRetail": {
+                  "type": "integer"
+                },
+                "redemptionLimitOfPromo": {
+                  "type": "integer"
+                }
+              }
+            },
+            "restrictionOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "liquorAgeRestricted": {
+                  "type": "boolean"
+                },
+                "tobaccoAgeRestricted": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "priceDisplayOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "unitPriceDisplay": {
+                  "type": "string"
+                },
+                "downDate": {
+                  "type": "string"
+                }
+              }
+            },
+            "multiBuyPromoOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "promoType": {
+                  "type": "string"
+                },
+                "promoDesc": {
+                  "type": "string"
+                },
+                "promoId": {
+                  "type": "string"
+                },
+                "promoMinQty": {
+                  "type": "integer"
+                },
+                "promoReward": {
+                  "type": "number"
+                }
+              }
+            },
+            "ticketTypeOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "ticketType": {
+                  "type": "string"
+                },
+                "1stShout": {
+                  "type": "string"
+                },
+                "2ndShout": {
+                  "type": "string"
+                },
+                "3rdShout": {
+                  "type": "string"
+                },
+                "flybuyPoints": {
+                  "type": "string"
+                },
+                "graphicCode": {
+                  "type": "string"
+                },
+                "onlinePromo": {
+                  "type": "integer"
+                }
+              }
+            },
+            "cooOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "isCooLogoRequired": {
+                  "type": "boolean"
+                },
+                "isCooBarcodeRequired": {
+                  "type": "boolean"
+                },
+                "isCooDescriptionRequired": {
+                  "type": "boolean"
+                },
+                "cooCountry": {
+                  "type": "string"
+                },
+                "cooPercentage": {
+                  "type": "integer"
+                },
+                "cooDescription": {
+                  "type": "string"
+                },
+                "cooStatement": {
+                  "type": "string"
+                }
+              }
+            },
+            "attributesOfPartNumber": {
+              "type": "object",
+              "properties": {
+                "barcodeID": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "deliveryRestrictions": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "excludedFromSubstitution": {
+                  "type": "boolean"
+                },
+                "sensitiveProduct": {
+                  "type": "boolean"
+                },
+                "weightedItemIndicator": {
+                  "type": "boolean"
+                },
+                "weigthedByEach": {
+                  "type": "boolean"
+                },
+                "hideProductSavingsFlag": {
+                  "type": "boolean"
+                },
+                "hideColesPromotionIconFlag": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "temporarilyUnavailable": {
+              "type": "boolean"
+            }
+          } }
+      ]
+    }
+  },
+  "required": [
+    "totalCount",
+    "partNumbers"
+  ]
+}

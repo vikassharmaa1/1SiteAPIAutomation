@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.rest.utilities.Reporting" />
+	</listeners>
+
+	<parameter name="baseUrl" value="WCS_Base_URL" />
+
+	<test name="WCS SSO AUTHENTICATION TESTS">
+		<parameter name="sheetname" value="WCS_SSO_Authentication" />
+		<classes>
+			<class name="wcs.sso.api.tests.WCS_Authentication">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS LOCALISATION BY COLLECTION LOCATION TESTS">
+		<parameter name="sheetname" value="WCS_ByCollectionLocation"></parameter>
+		<classes>
+			<class
+				name="wcs.localisation.api.tests.WCS_byCollectionLocation">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS LOCALISATION BY ADDRESS TESTS">
+		<parameter name="sheetname" value="WCS_ByAddress"></parameter>
+		<classes>
+			<class name="wcs.localisation.api.tests.WCS_byAddress">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS LOCALISATION BY RD ADDRESS TESTS">
+		<parameter name="sheetname" value="WCS_ByRDAddress" />
+		<classes>
+			<class name="wcs.localisation.api.tests.WCS_ByRDAddress">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS CCP PROFILE LOOKUP TESTS">
+		<parameter name="sheetname" value="WCS_ProfileLookup"></parameter>
+		<classes>
+			<class name="wcs.ccp.api.tests.WCS_ProfileLookup">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS PRODUCT ENRICHMENT TESTS">
+		<parameter name="sheetname" value="WCS_PriceByPartNumber"></parameter>
+		<classes>
+			<class
+				name="wcs.productEnrichment.api.tests.WCS_PriceByPartNumber">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS ADD UPDATE TROLLEY TESTS">
+		<parameter name="sheetname" value="WCS_AddUpdateTrolley"></parameter>
+		<classes>
+			<class name="wcs.trolley.api.tests.WCS_AddUpdateTrolley">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS MEDIUM SUMMARY TESTS">
+		<parameter name="sheetname" value="WCS_MediumSummary"></parameter>
+		<classes>
+			<class name="wcs.trolley.api.tests.WCS_MediumSummary">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS SHORT SUMMARY TESTS">
+		<parameter name="sheetname" value="WCS_ShortSummary"></parameter>
+		<classes>
+			<class name="wcs.trolley.api.tests.WCS_ShortSummary">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS TROLLEY VALIDATION TESTS">
+		<parameter name="sheetname" value="WCS_SyncValidation"></parameter>
+		<classes>
+			<class name="wcs.trolley.api.tests.WCS_SyncValidation">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET USER ADDRESS TESTS">
+		<parameter name="sheetname" value="WCS_UserAddresses"></parameter>
+		<classes>
+			<class name="wcs.userAddresses.api.tests.WCS_UserAddresses">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS BLOCKED ADDRESS TESTS">
+		<parameter name="sheetname" value="WCS_BlockedAddress"></parameter>
+		<classes>
+			<class name="wcs.blockedAddress.api.tests.WCS_BlockedAddress">
+			</class>
+		</classes>
+	</test>
+	<test name="COL To CCP ADDRESS REMOVE SYNC TESTS">
+		<parameter name="sheetname"
+			value="COLToCCPAddressRemoveSync" />
+		<classes>
+			<class name="wcs.ccp.api.tests.COLToCCP_RemoveAddress_Sync"></class>
+		</classes>
+	</test>
+	<test name="COL To CCP ADDRESS ADDTION SYNC TESTS">
+		<parameter name="sheetname"
+			value="COLToCCPAddressAdditionSync" />
+		<classes>
+			<class name="wcs.ccp.api.tests.COLToCCP_AddAddress_Sync"></class>
+		</classes>
+	</test>
+	<test name="COL To CCP UPDATE ADDRESS TESTS">
+		<parameter name="sheetname"
+			value="COLToCCPAddressUpdateSync"></parameter>
+		<classes>
+			<class name="wcs.ccp.api.tests.COLToCCP_UpdateAddress_Sync">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS CCP to COL Address Addition SyncTESTS">
+		<parameter name="sheetname"
+			value="WCS_CCPToCOLAddAddressSync"></parameter>
+		<classes>
+			<class name="wcs.ccp.api.tests.CCPToCOL_AddAddress_Sync">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS LOCALISATION BY FULL ADDRESS TESTS">
+		<parameter name="sheetname" value="WCS_ByFullAddress"></parameter>
+		<classes>
+			<class name="wcs.localisation.api.tests.WCS_byFullAddress">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS LOCALISATION BY FULL ADDRESS RD TESTS">
+		<parameter name="sheetname" value="WCS_ByFullRDAddress"></parameter>
+		<classes>
+			<class name="wcs.localisation.api.tests.WCS_byRemoteAddress">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET SLOTS BY LOCATION PUBLIC">
+		<parameter name="sheetname" value="WCS_GetSlotsLctn_Public"></parameter>
+		<classes>
+			<class name="wcs.slots.api.tests.WCS_GetSlotsByLocationPublic">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET SLOTS BY LOCATION PRIVATE">
+		<parameter name="sheetname" value="WCS_GetSlotsLctn_Private"></parameter>
+		<classes>
+			<class name="wcs.slots.api.tests.WCS_GetSlotsByLocationPrivate">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET SLOT BY ADDRESS PRIVATE">
+		<parameter name="sheetname" value="WCS_GetSlotsAdd_Private"></parameter>
+		<classes>
+			<class
+				name="wcs.getslotbyaddress.api.tests.WCS_byAddressPrivate"></class>
+		</classes>
+	</test>
+	<test name="WCS GET SLOT BY ADDRESS PUBLIC">
+		<parameter name="sheetname" value="WCS_GetSlotsAdd_Public"></parameter>
+		<classes>
+			<class
+				name="wcs.getslotbyaddress.api.tests.WCS_byAddressPublic"></class>
+		</classes>
+	</test>
+	<test name="WCS SLOT RESERVATION TESTS">
+		<parameter name="sheetname" value="WCS_SlotReservation" />
+		<classes>
+			<class name="wcs.slotReservation.api.tests.WCS_SlotReservation">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS SLOT RESERVATION SUBSERVICE">
+		<parameter name="sheetname"
+			value="WCS_SlotReservationSubServices" />
+		<classes>
+			<class
+				name="wcs.slotReservation.api.tests.WCS_SlotReservationSubServices">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS COLES PLUS SUBSCRIPTION DETAILS">
+		<parameter name="sheetname" value="WCS_GetSubscriptionDtls"></parameter>
+		<classes>
+			<class
+				name="wcs.colesPlus.api.tests.WCS_GetSubscriptionDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS DELETE SUBSCRIPTION">
+		<parameter name="sheetname" value="WCS_DeleteSubscription"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_DeleteSubscription">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS PAYMENT HISTORY">
+		<parameter name="sheetname" value="WCS_PaymentHistory"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_PaymentHistory">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS ADD MEMBER SEGMENT">
+		<parameter name="sheetname" value="WCS_AddMemberSegment"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_AddMemberSegment">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS EDIT SUBSCRIPTION">
+		<parameter name="sheetname" value="WCS_EditSubscription"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_EditSubscription">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS EDIT SUBSCRIPTION AFTER 3DS SUCCESS">
+		<parameter name="sheetname"
+			value="WCS_EditSubscription3dsSuccess"></parameter>
+		<classes>
+			<class
+				name="wcs.colesPlus.api.tests.WCS_EditSubscriptionAfter3dsSuccess">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS INITIATE SUBSCRIPTION">
+		<parameter name="sheetname" value="WCS_InitiateSubscription"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_InitiateSubscription">
+			</class>
+		</classes>
+	</test>
+	<test
+		name="WCS COLES PLUS COMPLETE SUBSCRIPTION AFTER 3DS SUCCESS">
+		<parameter name="sheetname" value="WCS_CompleteSubscription"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_CompleteSubscription">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS LITE WEIGHT">
+		<parameter name="sheetname" value="WCS_ColesPlusLiteWeight"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_ColesPlusLiteWeight">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS MEDIUM WEIGHT">
+		<parameter name="sheetname"
+			value="WCS_ColesPlusMediumWeight"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_ColesPlusMediumWeight">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS FULL WEIGHT">
+		<parameter name="sheetname" value="WCS_ColesPlusFullWeight"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_ColesPlusFullWeight">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS MOV">
+		<parameter name="sheetname" value="WCS_ColesPlusMOV"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_ColesPlusMOV">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COLES PLUS PHONE NUMBER UPDATE">
+		<parameter name="sheetname" value="WCS_PhoneNumberUpdate"></parameter>
+		<classes>
+			<class name="wcs.colesPlus.api.tests.WCS_PhoneNumberUpdate">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS ADDRESS PHONE NUMBER UPDATE">
+		<parameter name="sheetname" value="WCS_AddressContactUpdate"></parameter>
+		<classes>
+			<class
+				name="wcs.addressContactUpdate.api.tests.WCS_AddressContactUpdate">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS COMPLEX PROMOTION">
+		<parameter name="sheetname" value="Promotion" />
+		<classes>
+			<class name="wcs.promotion.api.tests.Promotion">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS DELETE SAVED CARD AND PAYPAL">
+		<parameter name="sheetname" value="WCS_DeleteSavedCard"></parameter>
+		<classes>
+			<class name="wcs.deletePayment.api.tests.WCS_DeletePayment">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS LOYALTY DATA FOR ORDER SUBMIT TEST">
+		<parameter name="sheetname" value="OrderSubmit"></parameter>
+		<classes>
+			<class name="wcs.orderSubmit.api.tests.WCS_EnhanceOrderSubmit">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS ORDER PROCESS BAGGING DETAILS TEST">
+		<parameter name="sheetname" value="WCS_OrderProcess"></parameter>
+		<classes>
+			<class name="wcs.orderProcess.api.test.WCS_BaggingDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="WSC PROFILE LOOKUP ATTRIBUTES TEST">
+		<parameter name="sheetname" value="WCS_EnhaceProfileLookup" />
+		<classes>
+			<class
+				name="wcs.enhanceProfileLookup.api.tests.WCS_ProfileEnhance">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS CANCEL ORDER TEST">
+		<parameter name="sheetname" value="WCS_CancelOrder"></parameter>
+		<classes>
+			<class name="wcs.cancelOrder.api.tests.WCS_CancelOrder">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET ORDER ITEMS">
+		<parameter name="sheetname" value="WCS_GetOrderItems"></parameter>
+		<classes>
+			<class name="wcs.getOrderItems.api.test.WCS_GetOrderItems">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS ORDER DETAILS">
+		<parameter name="sheetname" value="WCS_ViewOrderDetails"></parameter>
+		<classes>
+			<class name="wcs.orderdetails.api.tests.WCS_orderDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET ORDER DETAILS">
+		<parameter name="sheetname" value="WCS_getOrderDetails"></parameter>
+		<classes>
+			<class name="wcs.getOrderDetails.api.tests.WCS_getOrderDetails">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WCS CART ATTRIBUTES UPDATE">
+		<parameter name="sheetname" value="WCS_CartAttributeRD"></parameter>
+		<classes>
+			<class
+				name="wcs.cartAttributes.api.tests.WCS_RD_CartAttributes">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET SLOTS BY RD LOCATION PRIVATE">
+		<parameter name="sheetname"
+			value="WCS_GetRDSlotsLctn_Private"></parameter>
+		<classes>
+			<class
+				name="wcs.slots.api.tests.WCS_GetSlotsByRDLocationPrivate">
+			</class>
+		</classes>
+	</test>
+	<test name="WCS GET SLOTS BY RD LOCATION PUBLIC">
+		<parameter name="sheetname"
+			value="WCS_GetRDSlotsLctn_Public"></parameter>
+		<classes>
+			<class
+				name="wcs.slots.api.tests.WCS_GetSlotsByRDLocationPublic">
+			</class>
+		</classes>
+	</test>
+	<!-- Bluedot Start -->
+
+	<test name="WCS YOU ARE HERE NOTIFICATION TEST">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname"
+			value="WCS_YouAreHereNotification" />
+		<classes>
+			<class name="wcs.bluedot.api.tests.WCS_YouAreHereNotification">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS API PUSH NOTIFICATION TEST">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname" value="WCS_APIPushEventToColSRV" />
+		<classes>
+			<class name="wcs.bluedot.api.tests.WCS_APIPushEventToColSRV">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS TRIGGER TO WAVE API CURRENT FLOW TEST">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname"
+			value="WCS_TriggerToWaveAPICurrentFlow" />
+		<classes>
+			<class
+				name="wcs.bluedot.api.tests.WCS_TriggerToWaveAPICurrentFlow">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS BLUEDOT CLICK AND COLLECT ORDER STATUS TEST">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname" value="WCS_OrderStatusTestSIT"></parameter>
+		<classes>
+			<class
+				name="wcs.bluedot.api.tests.WCS_StatusOfClickCollectOrderSIT">
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="WCS BLUEDOT CLICK AND COLLECT ORDER STATUS BY ORDER ID TEST">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname"
+			value="WCS_OrderStatusByIdTestSIT"></parameter>
+		<classes>
+			<class
+				name="wcs.bluedot.api.tests.WCS_StatusOfClickCollectOrderByOrderIdSIT">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WCS Collection Notification Message To Customer TEST">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname" value="WCS_BluedotCollected"></parameter>
+		<classes>
+			<class name="wcs.bluedot.api.tests.WCS_BluedotCollected"></class>
+		</classes>
+	</test>
+
+	<test name="WCS Bagging Details Test">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname" value="WCS_BaggingSlotsCC" />
+		<classes>
+			<class name="wcs.bluedot.api.tests.WCS_BaggingDetailsCC">
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="WCS Bagging Detail Test">
+		<parameter name="baseUrl" value="Bluedot_WCS_Base_URL" />
+		<parameter name="sheetname" value="WCS_BaggingSlotsHD" />
+		<classes>
+			<class name="wcs.bluedot.api.tests.WCS_BaggingDetails">
+			</class>
+		</classes>
+	</test>
+
+
+
+	<!-- Bluedot End -->
+
+
+</suite> 

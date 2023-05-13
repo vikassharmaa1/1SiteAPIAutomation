@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM dd, yyyy HH:mm:ss'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Commerce Services - API Automation Project</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Commerce Services - API Automation Report</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>May 08, 2023 21:49:17</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.2</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.061%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='93.939%'>31</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>PS ORDER SUMMARY</span>
+						<span class='test-time'>May 08, 2023 21:49:17</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 08, 2023 21:49:17</span>
+	<span class='label end-time'>May 08, 2023 21:49:25</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+612ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>validateAdjustments</h5>
+						<span class="node-time label grey lighten-1 white-text">May 08, 2023 21:49:25</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+809ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>------------------API REQUEST------------------</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Request method: GET</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Request URI: https://col-ecommerce-test.azurewebsites.net/orders/158997034/summary?ver=1&storeId=20503</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Request Params: {}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Query Params: {ver=1, storeId=20503}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Path Params: {}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Form Params: {}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Headers: authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiI5MGUzM2U5YS1lYzBjLTQxYWMtYTVjNi1iYWVkOWM4ZmI3MmYiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC84MjU1MWExMi1iYmM4LTRmZWQtOGI3Zi0yYjc1ODI4NGI1ZWEvIiwiaWF0IjoxNjI5Nzk1OTk3LCJuYmYiOjE2Mjk3OTU5OTcsImV4cCI6MTYyOTc5OTg5NywiYWlvIjoiRTJZQWdyWVRMTXpkS1dMaERzbE1nYk9WMHdFPSIsImFwcGlkIjoiOTBlMzNlOWEtZWMwYy00MWFjLWE1YzYtYmFlZDljOGZiNzJmIiwiYXBwaWRhY3IiOiIxIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvODI1NTFhMTItYmJjOC00ZmVkLThiN2YtMmI3NTgyODRiNWVhLyIsIm9pZCI6Ijk1YTgzNjAwLWU3NjItNDc4Mi05MThjLTdjZjcwOGJiN2NiMyIsInJoIjoiMC5BUVlBRWhwVmdzaTc3VS1MZnl0MWdvUzE2cG8tNDVBTTdLeEJwY2E2N1p5UHR5OEdBQUEuIiwic3ViIjoiOTVhODM2MDAtZTc2Mi00NzgyLTkxOGMtN2NmNzA4YmI3Y2IzIiwidGlkIjoiODI1NTFhMTItYmJjOC00ZmVkLThiN2YtMmI3NTgyODRiNWVhIiwidXRpIjoicnVIOVVmNWxWVWVlLS1rcy1HeVlBQSIsInZlciI6IjEuMCJ9.b7fQgGymNBBeTJHcwUQXiF8BWo91j5MHKd_zdkdXDMEwwDBFHLu3oO0ZlIZHV9nTBbwt2OhxCLF0_wGdsFtlq7cWMbzVBkzw4V6MxU9zinQfxglfQip8PaDefzzQztbvd-W9HEgL765-iQ6ocXUVX0etmGFeC5QJSDYlLuc7kVOUHLNACJpFmu3-aGDyvSR3uuJAPeY4LBC4pXJ3NXiVeHO4eLwsWavFnA-RJpBGQ-qOR7hOjXVcj0AlQEamaInZAUQ9JfvIwzUTGGGNgHyc6cXb4s2E2R2T2H2sPIApIpTPBCWjRUv_5-29lR__5HjWEo1Nt1MpYJ_5k3MiBzaYQg
+userauthorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImZOYjZUODJ6OHhDS09Kd19jMmMwZSIsInR5cGUiOiJqd3QifQ.eyJodHRwczovL2NjcC9wcm9maWxlSWQiOiJlZDFiNzljYS1iMDI5LTQwNzQtODE5OS0xMTg1MGUwYzY1NDQiLCJpc3MiOiJodHRwczovL2NvbGVzLXNpdC5hdS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8ZWQxYjc5Y2EtYjAyOS00MDc0LTgxOTktMTE4NTBlMGM2NTQ0IiwiYXVkIjpbImN1c3RvbWVyLXNlcnZpY2VzIiwiaHR0cHM6Ly9jb2xlcy1zaXQuYXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY4MzI3NjQ2NSwiZXhwIjoxNzE0MzgwNDY1LCJhenAiOiJuWTY5eGlmNzIyRzRvRzhNcEpZeUhwTnJuMzk5TlcxWCIsInNjb3BlIjoib3BlbmlkIHJlYWQ6cHJvZmlsZSByZWFkOnByZWZlcmVuY2VzIHVwZGF0ZTpwYXNzd29yZCB1cGRhdGU6cHJlZmVyZW5jZXMgdXBkYXRlOnByb2R1Y3QtbGlzdCByZWFkOnByb2R1Y3QtbGlzdCB1cGRhdGU6bG95YWx0eS1hY2NvdW50IHJlYWQ6bG95YWx0eS1hY2NvdW50IG9mZmxpbmVfYWNjZXNzIHJlYWQ6Y29sIHVwZGF0ZTpjb2wifQ.e3oXW7U3soIloYhdBM9b1iK0uDhxPv2D7ZFlm7V7fV43DJMW6l8KOl7AMjaD3lyQc-Q63K5kvUv49Fhqzx5x9Lul872Q-vyILEp0VIRW9vbbwNTeXk5bUBCl5CmWQI-H4C0vSJRprm2fFvL53O9xHcO6Ctp4JiyXeXwlS1hIqx-Xd0_d9kiyIniymZ6dORl5KjDZLE-SYE69yi3ROAlOnVBBN25yKDL3JxGgBaRbgGSamfie0iFVB-afV-1VE5ry-D9XoPieUTZbA03MpGNR4BymfJLjI_X3RoA9mddvWi59OWsfUUCm06dMf8rwaZTDXSeOU0ObZggB3mW0GKZ3JA
+Accept=*/*
+Content-Type=application/json; charset=UTF-8</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Request Body: null</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>------------------API RESPONSE------------------</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Status Code: 200</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Status Line: HTTP/1.1 200 OK</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Response Body: {
+    "orderDetails": {
+        "grandTotal": 53.6,
+        "fulfillmentCenterName": "COL RIVERTON",
+        "lastUpdate": "2023-03-28T11:11:36.6",
+        "placedDate": "2023-03-27T15:33:31.6"
+    },
+    "adjustments": {
+        "otherAdjustments": [
+            {
+                "amount": "-1.80000",
+                "isCode": "false",
+                "description": "TestingCollectableOrderValue",
+                "promotionId": "727444385",
+                "isCoupon": "false"
+            },
+            {
+                "amount": "-11.00000",
+                "isCode": "false",
+                "description": "Free Delivery with Coles Plus",
+                "promotionId": "726928386",
+                "isCoupon": "false"
+            }
+        ]
+    },
+    "address": {
+        "lastName": "Sharma",
+        "personTitle": "",
+        "country": "AU",
+        "nickName": "Address 2",
+        "addressType": "SB",
+        "phone2": "",
+        "postcode": "6148",
+        "addressLine": [
+            "191A Corinthian Rd E",
+            "",
+            ""
+        ],
+        "addressId": "67450555",
+        "phone1": "0411222333",
+        "phone1Type": "MPN",
+        "firstName": "Vikas",
+        "email2": "",
+        "email1": "vikas.sharma@coles.com.au",
+        "suburb": "RIVERTON",
+        "state": "WA",
+        "phone2Type": "",
+        "primary": "0"
+    },
+    "trolleyTotals": {
+        "bagItemsTotal": 0.2,
+        "trolleySubtotal": 55.2,
+        "rawOrderSavings": 12.8,
+        "totalQuantity": 5,
+        "rawSimpleSavings": 0,
+        "grandTotal": 53.6,
+        "totalProductPrice": 55.4,
+        "shippingCharge": 11,
+        "rawOrderItemSavings": 0
+    },
+    "invoices": [
+        
+    ],
+    "orderAttributesMap": {
+        "dmDeliveryWindowType": "PARTNERDELIVERY",
+        "orderFlybuyBarcode": "2791240251915",
+        "orderSubServiceType": "UD",
+        "dmSlotcutofftimeUTC": "2023-03-28T00:00:00",
+        "orderBaggingPreference": "4",
+        "timeZone": "Australia/West",
+        "dmWindowType": "PARTNERDELIVERY",
+        "dmServiceType": "HD",
+        "dmDeliverySlotBaggingOptions": "4",
+        "dmDeliveryWindowTypeDescription": "Partner Delivery",
+        "orderFlybuyNumber": "600xxxxxxxxx1912",
+        "dmDeliveryWindowEndTime": "2023-03-28T13:30:00",
+        "dmSlotcutofftimeLocal": "2023-03-28T08:00:00",
+        "orderStaffDiscountNumber": null,
+        "dmDeliveryWindowStartTime": "2023-03-28T12:30:00",
+        "orderBaggingPreferenceDescription": "Coles Paper Bag"
+    },
+    "orderId": "158997034",
+    "orderDiscount": 1.8,
+    "freeDelivery": true,
+    "statusDetails": {
+        "orderStateDescription": "Released",
+        "overallStatus": "Completed",
+        "orderState": "R"
+    },
+    "payment": {
+        "selectedPaymentType": "Flypay",
+        "flypayRedeemPoints": "0",
+        "flypayRedeemAmount": "0.00",
+        "flypayCardScheme": "MASTERCARD",
+        "flypayCardSuffix": "1118"
+    }
+}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:23 PM</td>
+													<td class='step-details'>Status Code: 200</td>
+												</tr>
+												<tr class='log' status='error'>
+													<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+													<td class='timestamp'>9:49:24 PM</td>
+													<td class='step-details'>******Validation FAIL!!******</td>
+												</tr>
+												<tr class='log' status='error'>
+													<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+													<td class='timestamp'>9:49:24 PM</td>
+													<td class='step-details'>Expected - adjustments.otherAdjustments[0].amount = -11.00000</td>
+												</tr>
+												<tr class='log' status='error'>
+													<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+													<td class='timestamp'>9:49:24 PM</td>
+													<td class='step-details'>Actual - adjustments.otherAdjustments[0].amount = -1.80000</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>------------------API REQUEST------------------</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Request method: GET</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Request URI: https://col-ecommerce-test.azurewebsites.net/orders/158997034/summary?ver=1&storeId=20503</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Request Params: {}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Query Params: {ver=1, storeId=20503}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Path Params: {}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Form Params: {}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Headers: authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiI5MGUzM2U5YS1lYzBjLTQxYWMtYTVjNi1iYWVkOWM4ZmI3MmYiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC84MjU1MWExMi1iYmM4LTRmZWQtOGI3Zi0yYjc1ODI4NGI1ZWEvIiwiaWF0IjoxNjI5Nzk1OTk3LCJuYmYiOjE2Mjk3OTU5OTcsImV4cCI6MTYyOTc5OTg5NywiYWlvIjoiRTJZQWdyWVRMTXpkS1dMaERzbE1nYk9WMHdFPSIsImFwcGlkIjoiOTBlMzNlOWEtZWMwYy00MWFjLWE1YzYtYmFlZDljOGZiNzJmIiwiYXBwaWRhY3IiOiIxIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvODI1NTFhMTItYmJjOC00ZmVkLThiN2YtMmI3NTgyODRiNWVhLyIsIm9pZCI6Ijk1YTgzNjAwLWU3NjItNDc4Mi05MThjLTdjZjcwOGJiN2NiMyIsInJoIjoiMC5BUVlBRWhwVmdzaTc3VS1MZnl0MWdvUzE2cG8tNDVBTTdLeEJwY2E2N1p5UHR5OEdBQUEuIiwic3ViIjoiOTVhODM2MDAtZTc2Mi00NzgyLTkxOGMtN2NmNzA4YmI3Y2IzIiwidGlkIjoiODI1NTFhMTItYmJjOC00ZmVkLThiN2YtMmI3NTgyODRiNWVhIiwidXRpIjoicnVIOVVmNWxWVWVlLS1rcy1HeVlBQSIsInZlciI6IjEuMCJ9.b7fQgGymNBBeTJHcwUQXiF8BWo91j5MHKd_zdkdXDMEwwDBFHLu3oO0ZlIZHV9nTBbwt2OhxCLF0_wGdsFtlq7cWMbzVBkzw4V6MxU9zinQfxglfQip8PaDefzzQztbvd-W9HEgL765-iQ6ocXUVX0etmGFeC5QJSDYlLuc7kVOUHLNACJpFmu3-aGDyvSR3uuJAPeY4LBC4pXJ3NXiVeHO4eLwsWavFnA-RJpBGQ-qOR7hOjXVcj0AlQEamaInZAUQ9JfvIwzUTGGGNgHyc6cXb4s2E2R2T2H2sPIApIpTPBCWjRUv_5-29lR__5HjWEo1Nt1MpYJ_5k3MiBzaYQg
+userauthorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImZOYjZUODJ6OHhDS09Kd19jMmMwZSIsInR5cGUiOiJqd3QifQ.eyJodHRwczovL2NjcC9wcm9maWxlSWQiOiJlZDFiNzljYS1iMDI5LTQwNzQtODE5OS0xMTg1MGUwYzY1NDQiLCJpc3MiOiJodHRwczovL2NvbGVzLXNpdC5hdS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8ZWQxYjc5Y2EtYjAyOS00MDc0LTgxOTktMTE4NTBlMGM2NTQ0IiwiYXVkIjpbImN1c3RvbWVyLXNlcnZpY2VzIiwiaHR0cHM6Ly9jb2xlcy1zaXQuYXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY4MzI3NjQ2NSwiZXhwIjoxNzE0MzgwNDY1LCJhenAiOiJuWTY5eGlmNzIyRzRvRzhNcEpZeUhwTnJuMzk5TlcxWCIsInNjb3BlIjoib3BlbmlkIHJlYWQ6cHJvZmlsZSByZWFkOnByZWZlcmVuY2VzIHVwZGF0ZTpwYXNzd29yZCB1cGRhdGU6cHJlZmVyZW5jZXMgdXBkYXRlOnByb2R1Y3QtbGlzdCByZWFkOnByb2R1Y3QtbGlzdCB1cGRhdGU6bG95YWx0eS1hY2NvdW50IHJlYWQ6bG95YWx0eS1hY2NvdW50IG9mZmxpbmVfYWNjZXNzIHJlYWQ6Y29sIHVwZGF0ZTpjb2wifQ.e3oXW7U3soIloYhdBM9b1iK0uDhxPv2D7ZFlm7V7fV43DJMW6l8KOl7AMjaD3lyQc-Q63K5kvUv49Fhqzx5x9Lul872Q-vyILEp0VIRW9vbbwNTeXk5bUBCl5CmWQI-H4C0vSJRprm2fFvL53O9xHcO6Ctp4JiyXeXwlS1hIqx-Xd0_d9kiyIniymZ6dORl5KjDZLE-SYE69yi3ROAlOnVBBN25yKDL3JxGgBaRbgGSamfie0iFVB-afV-1VE5ry-D9XoPieUTZbA03MpGNR4BymfJLjI_X3RoA9mddvWi59OWsfUUCm06dMf8rwaZTDXSeOU0ObZggB3mW0GKZ3JA
+Accept=*/*
+Content-Type=application/json; charset=UTF-8</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Request Body: null</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>------------------API RESPONSE------------------</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Status Code: 200</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Status Line: HTTP/1.1 200 OK</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Response Body: {
+    "orderDetails": {
+        "grandTotal": 53.6,
+        "fulfillmentCenterName": "COL RIVERTON",
+        "lastUpdate": "2023-03-28T11:11:36.6",
+        "placedDate": "2023-03-27T15:33:31.6"
+    },
+    "adjustments": {
+        "otherAdjustments": [
+            {
+                "amount": "-1.80000",
+                "isCode": "false",
+                "description": "TestingCollectableOrderValue",
+                "promotionId": "727444385",
+                "isCoupon": "false"
+            },
+            {
+                "amount": "-11.00000",
+                "isCode": "false",
+                "description": "Free Delivery with Coles Plus",
+                "promotionId": "726928386",
+                "isCoupon": "false"
+            }
+        ]
+    },
+    "address": {
+        "lastName": "Sharma",
+        "personTitle": "",
+        "country": "AU",
+        "nickName": "Address 2",
+        "addressType": "SB",
+        "phone2": "",
+        "postcode": "6148",
+        "addressLine": [
+            "191A Corinthian Rd E",
+            "",
+            ""
+        ],
+        "addressId": "67450555",
+        "phone1": "0411222333",
+        "phone1Type": "MPN",
+        "firstName": "Vikas",
+        "email2": "",
+        "email1": "vikas.sharma@coles.com.au",
+        "suburb": "RIVERTON",
+        "state": "WA",
+        "phone2Type": "",
+        "primary": "0"
+    },
+    "trolleyTotals": {
+        "bagItemsTotal": 0.2,
+        "trolleySubtotal": 55.2,
+        "rawOrderSavings": 12.8,
+        "totalQuantity": 5,
+        "rawSimpleSavings": 0,
+        "grandTotal": 53.6,
+        "totalProductPrice": 55.4,
+        "shippingCharge": 11,
+        "rawOrderItemSavings": 0
+    },
+    "invoices": [
+        
+    ],
+    "orderAttributesMap": {
+        "dmDeliveryWindowType": "PARTNERDELIVERY",
+        "orderFlybuyBarcode": "2791240251915",
+        "orderSubServiceType": "UD",
+        "dmSlotcutofftimeUTC": "2023-03-28T00:00:00",
+        "orderBaggingPreference": "4",
+        "timeZone": "Australia/West",
+        "dmWindowType": "PARTNERDELIVERY",
+        "dmServiceType": "HD",
+        "dmDeliverySlotBaggingOptions": "4",
+        "dmDeliveryWindowTypeDescription": "Partner Delivery",
+        "orderFlybuyNumber": "600xxxxxxxxx1912",
+        "dmDeliveryWindowEndTime": "2023-03-28T13:30:00",
+        "dmSlotcutofftimeLocal": "2023-03-28T08:00:00",
+        "orderStaffDiscountNumber": null,
+        "dmDeliveryWindowStartTime": "2023-03-28T12:30:00",
+        "orderBaggingPreferenceDescription": "Coles Paper Bag"
+    },
+    "orderId": "158997034",
+    "orderDiscount": 1.8,
+    "freeDelivery": true,
+    "statusDetails": {
+        "orderStateDescription": "Released",
+        "overallStatus": "Completed",
+        "orderState": "R"
+    },
+    "payment": {
+        "selectedPaymentType": "Flypay",
+        "flypayRedeemPoints": "0",
+        "flypayRedeemAmount": "0.00",
+        "flypayCardScheme": "MASTERCARD",
+        "flypayCardSuffix": "1118"
+    }
+}</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Status Code: 200</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'><span class='label white-text red'>FAILED: Please find the details below</span></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:49:25 PM</td>
+													<td class='step-details'>Reason of Failure:
+ java.lang.NumberFormatException: For input string: ""</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>1</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>33</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>May 08, 2023 21:49:17</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>May 08, 2023 21:49:25</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>8,034ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Execution Platform</td>
+								<td>Remote Desktop</td>
+							</tr>
+							<tr>
+								<td>Environemnt</td>
+								<td>SIT</td>
+							</tr>
+							<tr>
+								<td>User</td>
+								<td>Commerce Services - Test Automation Team</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 0,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 0,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 3,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 28,
+				exceptionsChild: 5,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

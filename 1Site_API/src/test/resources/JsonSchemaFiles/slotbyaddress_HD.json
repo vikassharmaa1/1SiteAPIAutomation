@@ -1,0 +1,191 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "isColesPlusMember",
+        "slots"
+    ],
+    "properties": {
+        "isColesPlusMember": {
+            "type": "boolean"
+        },
+        "slots": {
+            "type": "object",
+            "required": [
+                "HD"
+            ],
+            "properties": {
+                "HD": {
+                    "type": "array",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "object",
+                                "required": [
+                                    "shiftId",
+                                    "cutoffTime",
+                                    "shift",
+                                    "restrictions",
+                                    "availableSlots",
+                                    "cutoffDayEnds",
+                                    "maximumSlots",
+                                    "slotDuration",
+                                    "slotTime",
+                                    "daySection",
+                                    "timeSlotOver",
+                                    "id",
+                                    "status",
+                                    "unattendedType",
+                                    "baggingOption",
+                                    "minimumOrderValue",
+                                    "maxItems",
+                                    "shipCharge",
+                                    "movForFreeShipCharge",
+                                    "shipChargeSaving",
+                                    "slotIdSelected",
+                                    "windowType",
+                                    "windowTypeDescription",
+                                    "displayStartTime",
+                                    "displayEndTime"
+                                ],
+                                "properties": {
+                                    "shiftId": {
+                                        "type": "string"
+                                    },
+                                    "cutoffTime": {
+                                        "type": "object",
+                                        "required": [
+                                            "utc",
+                                            "local"
+                                        ],
+                                        "properties": {
+                                            "utc": {
+                                                "type": "string"
+                                            },
+                                            "local": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "shift": {
+                                        "type": "string"
+                                    },
+                                    "restrictions": {
+                                        "type": "array",
+                                        "items": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "availableSlots": {
+                                        "type": "integer"
+                                    },
+                                    "cutoffDayEnds": {
+                                        "type": "integer"
+                                    },
+                                    "maximumSlots": {
+                                        "type": "integer"
+                                    },
+                                    "slotDuration": {
+                                        "type": "string"
+                                    },
+                                    "slotTime": {
+                                        "type": "object",
+                                        "required": [
+                                            "start",
+                                            "end"
+                                        ],
+                                        "properties": {
+                                            "start": {
+                                                "type": "string"
+                                            },
+                                            "end": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "daySection": {
+                                        "type": "string"
+                                    },
+                                    "timeSlotOver": {
+                                        "type": "boolean"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "status": {
+                                        "type": "string"
+                                    },
+                                    "unattendedType": {
+                                        "type": "string"
+                                    },
+                                    "baggingOption": {
+                                        "type": "integer"
+                                    },
+                                    "minimumOrderValue": {
+                                        "type": "string"
+                                    },
+                                    "maxItems": {
+                                        "type": "string"
+                                    },
+                                    "shipCharge": {
+                                        "type": "integer"
+                                    },
+                                    "movForFreeShipCharge": {
+                                        "type": "integer"
+                                    },
+                                    "shipChargeSaving": {
+                                        "type": "integer"
+                                    },
+                                    "slotIdSelected": {
+                                        "type": "boolean"
+                                    },
+                                    "windowType": {
+                                        "type": "string"
+                                    },
+                                    "windowTypeDescription": {
+                                        "type": "string"
+                                    },
+                                    "displayStartTime": {
+                                        "type": "object",
+                                        "required": [
+                                            "utc",
+                                            "local"
+                                        ],
+                                        "properties": {
+                                            "utc": {
+                                                "type": "string"
+                                            },
+                                            "local": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "displayEndTime": {
+                                        "type": "object",
+                                        "required": [
+                                            "utc",
+                                            "local"
+                                        ],
+                                        "properties": {
+                                            "utc": {
+                                                "type": "string"
+                                            },
+                                            "local": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

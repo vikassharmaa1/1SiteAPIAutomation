@@ -1,0 +1,197 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email1": {
+      "type": "string"
+    },
+    "addresses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "serviceType": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "personTitle": {
+              "type": "null"
+            },
+            "country": {
+              "type": "string"
+            },
+            "geoQASid": {
+              "type": "string"
+            },
+            "phone2": {
+              "type": "null"
+            },
+            "addressId": {
+              "type": "string"
+            },
+            "phone1": {
+              "type": "string"
+            },
+            "email2": {
+              "type": "null"
+            },
+            "email1": {
+              "type": "string"
+            },
+            "selfAddress": {
+              "type": "string"
+            },
+            "geoPrecision": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "phone2Type": {
+              "type": "null"
+            },
+            "nickName": {
+              "type": "string"
+            },
+            "addressType": {
+              "type": "string"
+            },
+            "postcode": {
+              "type": "string"
+            },
+            "addressLine": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "colWebstoreId": {
+              "type": "string"
+            },
+            "phone1Type": {
+              "type": "string"
+            },
+            "geoLongitude": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "geoLatitude": {
+              "type": "string"
+            },
+            "suburb": {
+              "type": "string"
+            },
+            "primary": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "serviceType",
+            "lastName",
+            "personTitle",
+            "country",
+            "geoQASid",
+            "phone2",
+            "addressId",
+            "phone1",
+            "email2",
+            "email1",
+            "selfAddress",
+            "geoPrecision",
+            "state",
+            "phone2Type",
+            "nickName",
+            "addressType",
+            "postcode",
+            "addressLine",
+            "colWebstoreId",
+            "phone1Type",
+            "geoLongitude",
+            "firstName",
+            "geoLatitude",
+            "suburb",
+            "primary"
+          ]
+        }
+      ]
+    },
+    "dateOfBirth": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "contextAttribute": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "attributeValue": {
+              "type": "object",
+              "properties": {
+                "storeId": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "storeId",
+                "value"
+              ]
+            },
+            "attributeName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "attributeValue",
+            "attributeName"
+          ]
+        }
+      ]
+    },
+    "phone1": {
+      "type": "string"
+    },
+    "phone1Type": {
+      "type": "string"
+    },
+    "primary": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "email1",
+    "addresses",
+    "dateOfBirth",
+    "userId",
+    "contextAttribute",
+    "phone1",
+    "phone1Type",
+    "primary"
+  ]
+}

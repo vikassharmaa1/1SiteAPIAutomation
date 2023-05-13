@@ -1,0 +1,22 @@
+{
+  "nickname": "New",
+  "RecipientFirstName": "sam",
+  "recipientLastName":"test",
+  "addressType": "Home",
+  "addressLine1": "29 Lakewood Ct",
+  "addressLine2": "",
+  "addressLine3": "",
+  "postcode": "0836",
+  "city": "HUMPTY DOO",
+  "state": "NT",
+  "country": "AU",
+    "location": {
+        "latitude": -13.472583,
+        "longitude": 130.57689
+    },
+  "verificationId": "",
+  "verificationStatus":true,
+  "customerNotes": "",
+  "contacts": [],
+  "externalAddressId": ""
+}

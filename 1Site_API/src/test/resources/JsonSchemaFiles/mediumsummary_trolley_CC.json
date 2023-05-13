@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "orderSubTotal": {
+      "type": "number"
+    },
+    "orderSaving": {
+      "type": "number"
+    },
+    "orderShipping": {
+      "type": "number"
+    },
+    "totalQty": {
+      "type": "number"
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "serviceType": {
+      "type": "string"
+    },
+    "ccLocationId": {
+      "type": "string"
+    },
+"orderItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "partNumber": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "orderItemId": {
+              "type": "string"
+            },
+            "unitPrice": {
+              "type": "number"
+            },
+            "itemTotal": {
+              "type": "number"
+            },
+            "itemSaving": {
+              "type": "number"
+            },
+            "multibuyPromoMinQty":{
+				"type":"number"
+			},
+			
+            "multibuyPromoId":{
+				"type":"string"
+			},
+			
+            "multibuyPromoType":{
+				"type":"string"
+			},
+            "multibuyPromoReward":{
+				"type":"number"
+			},
+            "multibuyDesc":{
+				"type":"string"
+			}
+          },
+          "required": [
+            "partNumber",
+            "qty",
+            "orderItemId",
+            "unitPrice",
+            "itemTotal",
+            "itemSaving"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "orderId",
+    "orderSubTotal",
+    "orderSaving",
+    "orderShipping",
+    "totalQty",
+    "colWebstoreId",
+    "storeId",
+    "catalogId",
+    "serviceType",
+    "ccLocationId",
+    "orderItems"
+  ]
+}

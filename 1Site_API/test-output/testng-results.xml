@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6773" started-at="2023-05-12T11:36:43 IST" finished-at="2023-05-12T11:36:50 IST">
+    <groups>
+    </groups>
+    <test name="PS ORDER SUMMARY" duration-ms="6773" started-at="2023-05-12T11:36:43 IST" finished-at="2023-05-12T11:36:50 IST">
+      <class name="ps.orderSummary.api.tests.PS_orderSummary">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ps.orderSummary.api.tests.PS_orderSummary@57d5872c]" name="beforeClass" is-config="true" duration-ms="1879" started-at="2023-05-12T11:36:43 IST" finished-at="2023-05-12T11:36:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PS_orderSummary]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SIT]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:ps.orderSummary.api.tests.PS_orderSummary@57d5872c]" name="beforeMethod" is-config="true" duration-ms="72" started-at="2023-05-12T11:36:45 IST" finished-at="2023-05-12T11:36:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ps.orderSummary.api.tests.PS_orderSummary.validateOrdDiscAndfreeDelivery() throws java.sql.SQLException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@c27a3a2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b200971]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateOrdDiscAndfreeDelivery()[pri:0, instance:ps.orderSummary.api.tests.PS_orderSummary@57d5872c]" name="validateOrdDiscAndfreeDelivery" duration-ms="4760" started-at="2023-05-12T11:36:45 IST" description="Validate freeDelivery flag &amp; Order Adjustment disc. value matches with db value" finished-at="2023-05-12T11:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrdDiscAndfreeDelivery -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ps.orderSummary.api.tests.PS_orderSummary@57d5872c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2023-05-12T11:36:50 IST" finished-at="2023-05-12T11:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- ps.orderSummary.api.tests.PS_orderSummary -->
+    </test> <!-- PS ORDER SUMMARY -->
+  </suite> <!-- Suite -->
+</testng-results>

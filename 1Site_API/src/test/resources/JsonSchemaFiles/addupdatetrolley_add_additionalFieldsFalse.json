@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderID": {
+      "type": "string"
+    },
+    "orderItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "orderItemId": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "partNumber": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "orderItemId",
+            "qty",
+            "partNumber"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "orderID",
+    "orderItems"
+  ],
+   "additionalProperties": false
+}

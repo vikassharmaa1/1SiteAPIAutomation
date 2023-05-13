@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "email1": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "string"
+    },
+    "contextAttribute": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "attributeValue": {
+              "type": "object",
+              "properties": {
+                "storeId": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "storeId",
+                "value"
+              ]
+            },
+            "attributeName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "attributeValue",
+            "attributeName"
+          ]
+        }
+      ]
+    },
+    "phone1": {
+      "type": "string"
+    },
+    "phone1Type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "email1",
+    "dateOfBirth",
+    "contextAttribute",
+    "phone1",
+    "phone1Type"
+  ]
+}

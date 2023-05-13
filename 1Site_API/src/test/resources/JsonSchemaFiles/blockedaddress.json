@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalNum": {
+      "type": "integer"
+    },
+    "numOfBlockedAddresses": {
+      "type": "integer"
+    },
+    "numOfNonBlockedAddresses": {
+      "type": "integer"
+    },
+    "validationResult": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "qasAddressId": {
+              "type": "string"
+            },
+            "isBlockedAddress": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "qasAddressId",
+            "isBlockedAddress"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "totalNum",
+    "numOfBlockedAddresses",
+    "numOfNonBlockedAddresses",
+    "validationResult"
+  ]
+}

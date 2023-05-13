@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "serviceType": {
+      "type": "string"
+    },
+    "dlAddressId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "totalQty": {
+      "type": "integer"
+    },
+        "orderAttributes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "substitutionOptionsAvailable": {
+                    "type": "string"
+                }
+            }
+        },
+    "storeId": {
+      "type": "string"
+    },
+    "overallMOV": {
+      "type": "number"
+    },
+    "orderItems": {
+      "type": "array",
+      "items": {},
+      "additionalItems": false
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "orderSaving": {
+      "type": "integer"
+    },
+    "orderSubTotal": {
+      "type": "integer"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "orderShipping": {
+      "type": "integer"
+    },
+    "baggingItems": {
+      "type": "array",
+      "items": {},
+      "additionalItems": false
+    },
+    "orderDiscount": {
+      "type": "integer"
+    },
+     "orderModificationCount": {
+      "type": "null"
+    },
+	"orderModifiedFlag": {
+      "type": "boolean"
+    },
+	"ccpAddressId": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "serviceType",
+    "dlAddressId",
+    "orderId",
+    "totalQty",
+    "orderAttributes",
+    "storeId",
+    "overallMOV",
+    "orderItems",
+    "colWebstoreId",
+    "orderSaving",
+    "orderSubTotal",
+    "catalogId",
+    "orderShipping",
+    "baggingItems",
+    "orderDiscount",
+"orderModificationCount",
+"orderModifiedFlag",
+"ccpAddressId"
+  ]
+}

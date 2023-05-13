@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "suburbOfSPOnlyLocalisation":{
+    	"type": "string"
+      },
+      "postcodeOfSPOnlyLocalisation":{
+    	"type": "string"
+      },
+    "orderSubTotal": {
+      "type": "number"
+    },
+    "orderSaving": {
+      "type": "number"
+    },
+    "orderShipping": {
+      "type": "number"
+    },
+    "paymentMethod":{
+    "type": "object"
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "serviceType": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "orderId",
+    "suburbOfSPOnlyLocalisation",
+    "postcodeOfSPOnlyLocalisation",
+    "orderSubTotal",
+    "orderSaving",
+    "orderShipping",
+    "colWebstoreId",
+    "storeId",
+    "catalogId",
+    "serviceType"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "contact": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "serviceType": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "personTitle": {
+              "type": "null"
+            },
+            "country": {
+              "type": "string"
+            },
+            "SignedInstruction": {
+              "type": "string"
+            },
+            "nickName": {
+              "type": "string"
+            },
+            "addressType": {
+              "type": "string"
+            },
+            "phone2": {
+              "type": "null"
+            },
+            "postcode": {
+              "type": "string"
+            },
+            "addressLine": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "colWebstoreId": {
+              "type": "string"
+            },
+            "addressId": {
+              "type": "string"
+            },
+            "phone1": {
+              "type": "string"
+            },
+            "phone1Type": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "email2": {
+              "type": "null"
+            },
+            "email1": {
+              "type": "string"
+            },
+            "selfAddress": {
+              "type": "string"
+            },
+            "UnattendedInstruction": {
+              "type": "string"
+            },
+            "suburb": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "phone2Type": {
+              "type": "null"
+            },
+            "primary": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "serviceType",
+            "lastName",
+            "personTitle",
+            "country",
+            "SignedInstruction",
+            "nickName",
+            "addressType",
+            "phone2",
+            "postcode",
+            "addressLine",
+            "colWebstoreId",
+            "addressId",
+            "phone1",
+            "phone1Type",
+            "firstName",
+            "email2",
+            "email1",
+            "selfAddress",
+            "UnattendedInstruction",
+            "suburb",
+            "state",
+            "phone2Type",
+            "primary"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "serviceType": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "personTitle": {
+              "type": "null"
+            },
+            "country": {
+              "type": "string"
+            },
+            "SignedInstruction": {
+              "type": "string"
+            },
+            "nickName": {
+              "type": "string"
+            },
+            "addressType": {
+              "type": "string"
+            },
+            "phone2": {
+              "type": "null"
+            },
+            "postcode": {
+              "type": "string"
+            },
+            "addressLine": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "colWebstoreId": {
+              "type": "string"
+            },
+            "addressId": {
+              "type": "string"
+            },
+            "phone1": {
+              "type": "string"
+            },
+            "phone1Type": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "email2": {
+              "type": "null"
+            },
+            "email1": {
+              "type": "string"
+            },
+            "selfAddress": {
+              "type": "string"
+            },
+            "UnattendedInstruction": {
+              "type": "string"
+            },
+            "suburb": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "phone2Type": {
+              "type": "null"
+            },
+            "primary": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "serviceType",
+            "lastName",
+            "personTitle",
+            "country",
+            "SignedInstruction",
+            "nickName",
+            "addressType",
+            "phone2",
+            "postcode",
+            "addressLine",
+            "colWebstoreId",
+            "addressId",
+            "phone1",
+            "phone1Type",
+            "firstName",
+            "email2",
+            "email1",
+            "selfAddress",
+            "UnattendedInstruction",
+            "suburb",
+            "state",
+            "phone2Type",
+            "primary"
+          ]
+        }
+      ]
+    },
+    "userId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "contact",
+    "userId"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+    "partNumbers": [
+        {
+            "ticketTypeOfPartNumber": {
+                "graphicCode": "MS_1",
+                "onlinePromo": 1,
+                "ticketType": "MS",
+                "1stShout": "Any 2 $1"
+            },
+            "pricesOfPartNumber": {
+                "offerPrice": 0.72
+            },
+            "partNumber": "5464461",
+            "priceDisplayOfPartNumber": {
+                "unitPriceDisplay": "$0.01 per 1Ea"
+            },
+            "restrictionOfPartNumber": {
+                "tobaccoAgeRestricted": true,
+                "liquorAgeRestricted": false
+            },
+            "purchaseLimit": "10",
+            "multiBuyPromoOfPartNumber": {
+                "promoMinQty": 2,
+                "promoDesc": "2 FOR $1",
+                "promoType": "MultibuyMultiSku",
+                "promoReward": 0.5,
+                "promoId": "727298906"
+            }
+        },
+        {
+            "ticketTypeOfPartNumber": {
+                "graphicCode": "MS_1",
+                "onlinePromo": 1,
+                "ticketType": "MS",
+                "1stShout": "Any 2 $1"
+            },
+            "pricesOfPartNumber": {
+                "offerPrice": 1.1
+            },
+            "partNumber": "105687",
+            "priceDisplayOfPartNumber": {
+                "unitPriceDisplay": "$1.10 per 1Ea"
+            },
+            "restrictionOfPartNumber": {
+                "tobaccoAgeRestricted": true,
+                "liquorAgeRestricted": false
+            },
+            "purchaseLimit": "10",
+            "multiBuyPromoOfPartNumber": {
+                "promoMinQty": 2,
+                "promoDesc": "2 FOR $1",
+                "promoType": "MultibuyMultiSku",
+                "promoReward": 0.5,
+                "promoId": "727298906"
+            }
+        }
+    ],
+    "totalCount": 2
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderID": {
+      "type": "string"
+    },
+    "totalQty": {
+      "type": "integer"
+    },
+    "orderItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "unitPrice": {
+              "type": "number"
+            },
+            "itemTotal": {
+              "type": "number"
+            },
+            "itemSaving": {
+              "type": "integer"
+            },
+            "orderItemId": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "partNumber": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "unitPrice",
+            "itemTotal",
+            "itemSaving",
+            "orderItemId",
+            "qty",
+            "partNumber"
+          ]
+        }
+      ]
+    },
+    "orderSaving": {
+      "type": "integer"
+    },
+    "orderSubTotal": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "orderID",
+    "totalQty",
+    "orderItems",
+    "orderSaving",
+    "orderSubTotal"
+  ],
+   "additionalProperties": false
+}

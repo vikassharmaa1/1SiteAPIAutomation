@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "isB2B": {
+      "type": "boolean"
+    },
+    "parentMemberDN": {
+      "type": "string"
+    },
+    "edmTotalSpent": {
+      "type": "number"
+    },
+    "edmFirstOrderDate": {
+      "type": "string"
+    },
+    "edmDeliveryCustomer": {
+      "type": "string"
+    },
+    "colUserId": {
+      "type": "string"
+    },
+    "csrRedemptionLimitExemption": {
+      "type": "integer"
+    },
+    "edmClickAndCollectCustomer": {
+      "type": "string"
+    },
+    "edmOrderCount": {
+      "type": "integer"
+    },
+    "b2bAttributes": {
+      "type": "object",
+      "properties": {
+        "hasSapAccount": {
+          "type": "boolean"
+        },
+        "industry": {
+          "type": "string"
+        },
+        "isAdminUser": {
+          "type": "boolean"
+        },
+        "businessType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hasSapAccount",
+        "industry",
+        "isAdminUser",
+        "businessType"
+      ]
+    }
+  },
+  "required": [
+    "isB2B",
+    "parentMemberDN",
+    "edmTotalSpent",
+    "edmFirstOrderDate",
+    "edmDeliveryCustomer",
+    "colUserId",
+    "csrRedemptionLimitExemption",
+    "edmClickAndCollectCustomer",
+    "edmOrderCount",
+    "b2bAttributes"
+  ]
+}

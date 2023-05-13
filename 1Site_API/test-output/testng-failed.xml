@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="env" value="SIT"/>
+  <parameter name="layer" value="PS"/>
+  <listeners>
+    <listener class-name="com.rest.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="PS ORDER SUMMARY(failed)">
+    <parameter name="sheetname" value="PS_orderSummary"/>
+    <classes>
+      <class name="ps.orderSummary.api.tests.PS_orderSummary">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="validateOrdDiscAndfreeDelivery"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- ps.orderSummary.api.tests.PS_orderSummary -->
+    </classes>
+  </test> <!-- PS ORDER SUMMARY(failed) -->
+</suite> <!-- Failed suite [Suite] -->

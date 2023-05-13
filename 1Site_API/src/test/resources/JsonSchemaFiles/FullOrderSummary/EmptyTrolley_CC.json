@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "serviceType": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "totalQty": {
+      "type": "integer"
+    },
+        "orderAttributes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "substitutionOptionsAvailable": {
+                    "type": "string"
+                }
+            }
+        },
+    "storeId": {
+      "type": "string"
+    },
+    "ccLocationId": {
+    "type": "string"
+    },
+    "overallMOV": {
+    "type": "number"
+    },
+    "orderItems": {
+      "type": "array",
+      "items": {},
+      "additionalItems": false
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "orderSaving": {
+      "type": "integer"
+    },
+    "orderSubTotal": {
+      "type": "integer"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "orderShipping": {
+      "type": "integer"
+    },
+    "baggingItems": {
+      "type": "array",
+      "items": {},
+      "additionalItems": false
+    },
+    "orderDiscount": {
+      "type": "integer"
+    },
+     "orderModificationCount": {
+      "type": "null"
+    },
+"orderModifiedFlag": {
+                    "type": "boolean"
+                }
+  },
+  "additionalProperties": false,
+  "required": [
+    "serviceType",
+    "orderId",
+    "totalQty",
+    "orderAttributes",
+    "storeId",
+    "ccLocationId",
+    "overallMOV",
+    "orderItems",
+    "colWebstoreId",
+    "orderSaving",
+    "orderSubTotal",
+    "catalogId",
+    "orderShipping",
+    "baggingItems",
+"orderDiscount",
+"orderModificationCount",
+"orderModifiedFlag"
+  ]
+}

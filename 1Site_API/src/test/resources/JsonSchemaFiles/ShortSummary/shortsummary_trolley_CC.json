@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "orderSubTotal": {
+      "type": "number"
+    },
+    "orderSaving": {
+      "type": "number"
+    },
+    "orderShipping": {
+      "type": "number"
+    },
+    "colWebstoreId": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "catalogId": {
+      "type": "string"
+    },
+    "serviceType": {
+      "type": "string"
+    },
+    "ccLocationId": {
+      "type": "string"
+    }
+ },
+  "required": [
+    "orderId",
+    "orderSubTotal",
+    "orderSaving",
+    "orderShipping",
+    "colWebstoreId",
+    "storeId",
+    "catalogId",
+    "serviceType",
+    "ccLocationId"
+  ]
+}

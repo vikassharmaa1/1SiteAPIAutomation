@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.rest.utilities.Reporting" />
+		<listener
+			class-name="com.rest.utilities.AnnotationTransformer" />
+	</listeners>
+
+	<parameter name="baseUrl" value="APIM_Base_URL" />
+
+	<test name="APIM CCP PROFILE LOOKUP TEST">
+		<parameter name="sheetname" value="APIM_ProfileLookUp" />
+		<classes>
+			<class name="apim.ccp.api.tests.APIM_ProfileLookup"></class>
+		</classes>
+	</test>
+	<test name="APIM SSO AUTHENTICATION TEST">
+		<parameter name="sheetname" value="APIM_Authentication"></parameter>
+		<classes>
+			<class name="apim.sso.api.tests.APIM_Authentication"></class>
+		</classes>
+	</test>
+	<test name="APIM PRODUCT ENRICHMENT TEST">
+		<parameter name="sheetname" value="APIM_PriceByPartNumber"></parameter>
+		<classes>
+			<class
+				name="apim.productEnrichment.api.tests.APIM_PriceByPartNumber"></class>
+		</classes>
+	</test>
+	<test name="APIM LOCALISATION BY COLLECTION LOCATION TEST">
+		<parameter name="sheetname"
+			value="APIM_ByCollectionLocation"></parameter>
+		<classes>
+			<class
+				name="apim.localisation.api.tests.APIM_ByCollectionLocation"></class>
+		</classes>
+	</test>
+	<test name="APIM LOCALISATION BY ADDRESS TEST">
+		<parameter name="sheetname" value="APIM_ByAddress"></parameter>
+		<classes>
+			<class name="apim.localisation.api.tests.APIM_ByAddress"></class>
+		</classes>
+	</test>
+	<test name="APIM LOCALISATION BY RD ADDRESS TESTS">
+		<parameter name="sheetname" value="APIM_ByRDAddress" />
+		<classes>
+			<class name="apim.localisation.api.tests.APIM_ByRDAddress">
+			</class>
+		</classes>
+	</test>
+
+	<test name="APIM GET USER ADDRESS TEST">
+		<parameter name="sheetname" value="APIM_UserAddresses"></parameter>
+		<classes>
+			<class name="apim.userAddresses.api.tests.APIM_UserAddresses"></class>
+		</classes>
+	</test>
+	<test name="APIM ADD UPDATE TROLLEY TEST">
+		<parameter name="sheetname" value="APIM_AddUpdateTrolley"></parameter>
+		<classes>
+			<class name="apim.trolley.api.tests.APIM_AddUpdateTrolley"></class>
+		</classes>
+	</test>
+	<test name="APIM MEDIUM SUMMARY TEST">
+		<parameter name="sheetname" value="APIM_MediumSummary"></parameter>
+		<classes>
+			<class name="apim.trolley.api.tests.APIM_MediumSummary"></class>
+		</classes>
+	</test>
+	<test name="APIM SHORT SUMMARY TEST">
+		<parameter name="sheetname" value="APIM_ShortSummary"></parameter>
+		<classes>
+			<class name="apim.trolley.api.tests.APIM_ShortSummary"></class>
+		</classes>
+	</test>
+	<test name="APIM TROLLEY VALIDATION TEST">
+		<parameter name="sheetname" value="APIM_SyncValidation"></parameter>
+		<classes>
+			<class name="apim.trolley.api.tests.APIM_SyncValidation"></class>
+		</classes>
+	</test>
+	<test name="APIM BLOCKED ADDRESS TEST">
+		<parameter name="sheetname" value="APIM_BlockedAddress"></parameter>
+		<classes>
+			<class name="apim.blockedAddress.api.tests.APIM_BlockedAddress"></class>
+		</classes>
+	</test>
+	<test name="APIM LOCALISATION BY FULL ADDRESS TEST">
+		<parameter name="sheetname" value="APIM_ByFullAddress"></parameter>
+		<classes>
+			<class name="apim.localisation.api.tests.APIM_ByFullAddress"></class>
+		</classes>
+	</test>
+	<test name="APIM LOCALISATION BY FULL ADDRESS RD TESTS">
+		<parameter name="sheetname" value="APIM_ByFullRDAddress"></parameter>
+		<classes>
+			<class name="apim.localisation.api.tests.APIM_byRemoteAddress">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET SLOTS BY LOCATION PUBLIC">
+		<parameter name="sheetname" value="APIM_GetSlotsLctn_Public"></parameter>
+		<classes>
+			<class
+				name="apim.slots.api.tests.APIM_GetSlotsByLocationPublic">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET SLOTS BY LOCATION PRIVATE">
+		<parameter name="sheetname"
+			value="APIM_GetSlotsLctn_Private"></parameter>
+		<classes>
+			<class
+				name="apim.slots.api.tests.APIM_GetSlotsByLocationPrivate">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET SLOT BY ADDRESS PRIVATE">
+		<parameter name="sheetname" value="APIM_GetSlotsAdd_Private"></parameter>
+		<classes>
+			<class
+				name="apim.getslotbyaddress.api.tests.APIM_byAddressPrivate"></class>
+		</classes>
+	</test>
+	<test name="APIM GET SLOT BY ADDRESS PUBLIC">
+		<parameter name="sheetname" value="APIM_GetSlotsAdd_Public"></parameter>
+		<classes>
+			<class
+				name="apim.getslotbyaddress.api.tests.APIM_byAddressPublic"></class>
+		</classes>
+	</test>
+	<test name="APIM SLOT RESERVATION TESTS">
+		<parameter name="sheetname" value="APIM_SlotReservation" />
+		<classes>
+			<class
+				name="apim.slotReservation.api.tests.APIM_SlotReservation">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM SLOT RESERVATION TESTS SUB SERVICE">
+		<parameter name="sheetname"
+			value="APIM_SlotReservationSubServices" />
+		<classes>
+			<class
+				name="apim.slotReservation.api.tests.APIM_SlotReservationSubServices">
+			</class>
+		</classes>
+	</test>
+
+	<test name="APIM COLES PLUS SUBSCRIPTION DETAILS">
+		<parameter name="sheetname" value="APIM_GetSubscriptionDtls"></parameter>
+		<classes>
+			<class
+				name="apim.colesPlus.api.tests.APIM_GetSubscriptionDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS DELETE SUBSCRIPTION">
+		<parameter name="sheetname" value="APIM_DeleteSubscription"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_DeleteSubscription">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS PAYMENT HISTORY">
+		<parameter name="sheetname" value="APIM_PaymentHistory"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_PaymentHistory">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS ADD MEMBER SEGMENT">
+		<parameter name="sheetname" value="APIM_AddMemberSegment"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_AddMemberSegment">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS EDIT SUBSCRIPTION">
+		<parameter name="sheetname" value="APIM_EditSubscription"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_EditSubscription">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS EDIT SUBSCRIPTION AFTER 3DS SUCCESS">
+		<parameter name="sheetname"
+			value="APIM_EditSubscription3dsSuccess"></parameter>
+		<classes>
+			<class
+				name="apim.colesPlus.api.tests.APIM_EditSubscriptionAfter3dsSuccess">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS INITIATE SUBSCRIPTION">
+		<parameter name="sheetname"
+			value="APIM_InitiateSubscription"></parameter>
+		<classes>
+			<class
+				name="apim.colesPlus.api.tests.APIM_InitiateSubscription">
+			</class>
+		</classes>
+	</test>
+	<test
+		name="APIM COLES PLUS COMPLETE SUBSCRIPTION AFTER 3DS SUCCESS">
+		<parameter name="sheetname"
+			value="APIM_CompleteSubscription"></parameter>
+		<classes>
+			<class
+				name="apim.colesPlus.api.tests.APIM_CompleteSubscription">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS LITE WEIGHT">
+		<parameter name="sheetname" value="APIM_ColesPlusLiteWeight"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_ColesPlusLiteWeight">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS MEDIUM WEIGHT">
+		<parameter name="sheetname"
+			value="APIM_ColesPlusMediumWeight"></parameter>
+		<classes>
+			<class
+				name="apim.colesPlus.api.tests.APIM_ColesPlusMediumWeight">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS FULL WEIGHT">
+		<parameter name="sheetname" value="APIM_ColesPlusFullWeight"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_ColesPlusFullWeight">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS MOV">
+		<parameter name="sheetname" value="APIM_ColesPlusMOV"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_ColesPlusMOV">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COLES PLUS PHONE NUMBER UPDATE">
+		<parameter name="sheetname" value="APIM_PhoneNumberUpdate"></parameter>
+		<classes>
+			<class name="apim.colesPlus.api.tests.APIM_PhoneNumberUpdate">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM ADDRESS PHONE NUMBER UPDATE">
+		<parameter name="sheetname"
+			value="APIM_AddressContactUpdate"></parameter>
+		<classes>
+			<class
+				name="apim.addressContactUpdate.api.tests.APIM_AddressContactUpdate">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM COMPLEX PROMOTION">
+		<parameter name="sheetname" value="Promotion" />
+		<classes>
+			<class name="apim.promotion.api.tests.Promotion">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM DELETE SAVED CARD AND PAYPAL">
+		<parameter name="sheetname" value="APIM_DeleteSavedCard"></parameter>
+		<classes>
+			<class name="apim.deletePayment.api.tests.APIM_DeletePayment">
+			</class>
+		</classes>
+	</test>
+
+	<test name="APIM LOYALTY DATA FOR ORDER SUBMIT">
+		<parameter name="sheetname" value="APIM_OrderSubmit"></parameter>
+		<classes>
+			<class
+				name="apim.orderSubmit.api.tests.APIM_EnhanceOrderSubmit">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM ORDER PROCESS BAGGING DETAILS">
+		<parameter name="sheetname" value="APIM_OrderProcess"></parameter>
+		<classes>
+			<class name="apim.orderProcess.api.tests.APIM_BaggingDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM PROFILE LOOKUP ATTRIBUTES TEST">
+		<parameter name="sheetname" value="APIM_EnhaceProfileLookup" />
+		<classes>
+			<class
+				name="apim.enhanceProfileLookup.api.tests.APIM_ProfileLookup">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM CANCEL ORDER TEST">
+		<parameter name="sheetname" value="APIM_CancelOrder"></parameter>
+		<classes>
+			<class name="apim.cancelorder.api.tests.APIM_CancelOrder">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET ORDER ITEMS TEST">
+		<parameter name="sheetname" value="APIM_GetOrderItems"></parameter>
+		<classes>
+			<class name="apim.getOrderItems.api.tests.APIM_GetOrdetItems">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM ORDER DETAILS">
+		<parameter name="sheetname" value="APIM_OrderDetails"></parameter>
+		<classes>
+			<class name="apim.orderdetails.api.tests.APIM_orderDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET ORDER DETAILS">
+		<parameter name="sheetname" value="APIM_getOrderDetails"></parameter>
+		<classes>
+			<class name="apim.getOrderDetails.api.tests.APIM_getOrderDetails">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM CART ATTRIBUTES UPDATE">
+		<parameter name="sheetname" value="APIM_CartAttributeRD"></parameter>
+		<classes>
+			<class
+				name="apim.cartAttributes.api.tests.APIM_RD_CartAttributes">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET SLOTS BY RD LOCATION PRIVATE">
+		<parameter name="sheetname"
+			value="APIM_GetSlotsRDLctn_Private"></parameter>
+		<classes>
+			<class
+				name="apim.slots.api.tests.APIM_GetSlotsByRDLocationPrivate">
+			</class>
+		</classes>
+	</test>
+	<test name="APIM GET SLOTS BY RD LOCATION PUBLIC">
+		<parameter name="sheetname"
+			value="APIM_GetSlotsRDLctn_Public"></parameter>
+		<classes>
+			<class
+				name="apim.slots.api.tests.APIM_GetSlotsByRDLocationPublic">
+			</class>
+		</classes>
+	</test>
+	<!-- Bluedot Start -->
+	<test name="APIM BLUEDOT CLICK AND COLLECT ORDER STATUS TEST">
+		<parameter name="baseUrl" value="Bluedot_APIM_Base_URL" />
+		<parameter name="sheetname" value="APIM_OrderStatusTestSIT" />
+		<classes>
+			<class
+				name="apim.bluedot.api.tests.APIM_StatusOfClickCollectOrderSIT">
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="APIM BLUEDOT CLICK AND COLLECT ORDER STATUS BY ORDER ID TEST">
+		<parameter name="baseUrl" value="Bluedot_APIM_Base_URL" />
+		<parameter name="sheetname"
+			value="APIM_OrderStatusByIdTestSIT" />
+		<classes>
+			<class
+				name="apim.bluedot.api.tests.APIM_StatusOfClickCollectOrderByOrderIdSIT">
+			</class>
+		</classes>
+	</test>
+
+	<test name="APIM BLUEDOT API PUSH EVENT TO COL SERVICES TEST">
+		<parameter name="baseUrl" value="Bluedot_APIM_Base_URL" />
+		<parameter name="sheetname"
+			value="APIM_APIPushEventToColSRV" />
+		<classes>
+			<class name="apim.bluedot.api.tests.APIM_APIPushEventToColSRV">
+			</class>
+		</classes>
+	</test>
+
+	<!-- Bluedot End -->
+
+</suite> 

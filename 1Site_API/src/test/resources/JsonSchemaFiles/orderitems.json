@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderStateDescription": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "orderItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "unitPrice": {
+              "type": "number"
+            },
+            "itemTotal": {
+              "type": "number"
+            },
+            "itemSaving": {
+              "type": "number"
+            },
+            "orderItemId": {
+              "type": "string"
+            },
+            "lineItemType": {
+              "type": "string"
+            },
+            "itemAttributes": {
+              "type": "object",
+              "properties": {
+                "averageSize": {
+                  "type": "string"
+                },
+                "displayReviews": {
+                  "type": "string"
+                },
+                "liquorAgeRestrictionFlag": {
+                  "type": "string"
+                },
+                "weightedItemIndicator": {
+                  "type": "string"
+                },
+                "onlineSizeDescription": {
+                  "type": "string"
+                },
+                "primaryAisle": {
+                  "type": "string"
+                },
+                "tobaccoAgeRestrictionFlag": {
+                  "type": "string"
+                },
+                "excludeFromSubstitutionFlag": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "averageSize",
+                "displayReviews",
+                "liquorAgeRestrictionFlag",
+                "weightedItemIndicator",
+                "onlineSizeDescription",
+                "primaryAisle",
+                "tobaccoAgeRestrictionFlag",
+                "excludeFromSubstitutionFlag"
+              ]
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "available": {
+              "type": "boolean"
+            },
+            "partNumber": {
+              "type": "string"
+            },
+            "productName": {
+              "type": "string"
+            },
+            "createDate": {
+              "type": "string"
+            },
+            "manufacturer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "unitPrice",
+            "itemTotal",
+            "itemSaving",
+            "orderItemId",
+            "lineItemType",
+            "itemAttributes",
+            "qty",
+            "available",
+            "partNumber",
+            "productName",
+            "createDate",
+            "manufacturer"
+          ]
+        }
+      ]
+    },
+    "orderState": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "orderStateDescription",
+    "orderId",
+    "orderItems",
+    "orderState"
+  ]
+}

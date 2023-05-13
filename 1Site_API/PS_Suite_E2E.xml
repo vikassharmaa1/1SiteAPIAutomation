@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.rest.utilities.Reporting" />
+	</listeners>
+
+	<parameter name="baseUrl" value="PS_Tests_E2E" />
+
+	<test name="PS E2E HD Tests">
+		<parameter name="sheetname" value="E2E_HD"></parameter>
+		<classes>
+			<class name="ps.integration.tests.E2E_HD">
+			</class>
+		</classes>
+	</test>
+
+</suite> 

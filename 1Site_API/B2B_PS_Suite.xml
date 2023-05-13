@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.rest.utilities.Reporting" />
+		<!-- <listener class-name="com.rest.utilities.AnnotationTransformer" /> -->
+	</listeners>
+
+	<parameter name="baseUrl" value="B2B_PS" />
+	
+	<test name="PS LOCALISATION BY FULL ADDRESS TEST">
+		<parameter name="sheetname" value="PS_ByFullAddress"></parameter>
+		<classes>
+			<class name="ps.localisation.api.tests.PS_ByFullAddress"></class>
+		</classes>
+	</test>
+ 	 <test name="PS SSO AUTHENTICATION TEST">
+		<parameter name="sheetname" value="PS_Authentication"></parameter>
+		<classes>
+			<class name="ps.sso.api.tests.PS_Authentication"></class>
+		</classes>
+	</test>
+	<test name="PS LOCALISATION BY COLLECTION LOCATION TEST">
+		<parameter name="sheetname" value="PS_ByCollectionLocation"></parameter>
+		<classes>
+			<class name="ps.localisation.api.tests.PS_ByCollectionLocation"></class>
+		</classes>
+	</test>
+	<test name="PS ADD UPDATE TROLLEY TEST">
+		<parameter name="sheetname" value="PS_AddUpdateTrolley"></parameter>
+		<classes>
+			<class name="ps.trolley.api.tests.PS_AddUpdateTrolley"></class>
+		</classes>
+	</test>
+	<test name="PS TROLLEY VALIDATION TEST">
+		<parameter name="sheetname" value="PS_SyncValidation"></parameter>
+		<classes>
+			<class name="ps.trolley.api.tests.PS_SyncValidation">
+			</class>
+		</classes>
+	</test>
+	<test name="PS ORDER PROCESS TEST">
+		<parameter name="sheetname" value="PS_OrderProcess"></parameter>
+		<classes>
+			<class name="ps.orderProcess.api.tests.PS_OrderProcess">
+			</class>
+		</classes>
+	</test>
+	<test name="PS SLOT RESERVATION TEST">
+		<parameter name="sheetname" value="PS_SlotReservation" />
+		<classes>
+			<class name="ps.slotReservation.api.tests.PS_SlotReservation">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="PS SLOT RESERVATION TESTS SUBSERVICES">
+		<parameter name="sheetname"
+			value="PS_SlotReservationSubServices" />
+		<classes>
+			<class
+				name="ps.slotReservation.api.tests.PS_SlotReservationSubServices">
+			</class>
+		</classes>
+	</test> 
+	<test name="PS RESERVE SLOT ENHANCEMENT">
+		<parameter name="sheetname"
+			value="PS_SlotReservationEnhancement"></parameter>
+		<classes>
+			<class
+				name="ps.slotReservation.api.tests.PS_SlotReservationEnhancement">
+			</class>
+		</classes>
+	</test>
+</suite> 
